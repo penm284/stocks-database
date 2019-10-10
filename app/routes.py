@@ -4,13 +4,7 @@ from app import app
 
 from flask import Flask, request, render_template, request, redirect
 from flask_bootstrap import Bootstrap
-from flask_pymongo import PyMongo
 
-app.config['MONGO_DBNAME'] = 'IA'
-app.config['MONGO_URI']= 'mongodb+srv://admin:paQYItRoMs9pfF4N@cluster0-lfs7i.mongodb.net/IA?retryWrites=true&w=majority'
-
-
-mongo = PyMongo(app)
 app = Flask(__name__)
 # bootstrap4 is used for styling our front-end
 bootstrap = Bootstrap(app)
